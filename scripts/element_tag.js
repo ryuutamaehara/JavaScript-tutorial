@@ -1,0 +1,8 @@
+//ページ内のアンカータグをすべて取得
+var list = document.getElementsByTagName('a');
+
+//リスト(HTMLCollectionオブジェクト)から順にアンカータグを取り出し、
+//そのhref属性をログに出力する。
+for(var i = 0,len = list.length; i < len; i++){
+    console.log(list.item(i).href);
+}
